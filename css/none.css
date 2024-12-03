@@ -14,7 +14,7 @@ body {
 
 .container {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     overflow: hidden;
     /* Для очищення float */
 }
@@ -25,7 +25,7 @@ body {
     width: 30vw;
     background-color: #4b5c4e;
     padding: 20px;
-    height: 45vw;
+    height: 60vw;
 }
 
 .block2 ul {
@@ -57,7 +57,7 @@ body {
     color: #2f2e2d;
     padding: 20px;
     margin-right: 32vw;
-    height: 15vw;
+    height: 20vw;
 }
 
 
@@ -67,7 +67,7 @@ body {
     padding: 20px;
     text-align: left;
     margin-right: 32vw;
-    height: 15vw;
+    height: 20vw;
 }
 
 .block5 {
@@ -78,7 +78,7 @@ body {
     padding: 20px;
     margin-right: 32vw;
     margin-top: auto;
-    height: 15vw;
+    height: 20vw;
     color: black;
 }
 
