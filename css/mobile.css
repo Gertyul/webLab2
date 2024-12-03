@@ -32,6 +32,7 @@ body {
     grid-area: menu;
     background-color: #4b5c4e;
     padding: 20px;
+    width: 100%;
 }
 
 .block2 ul {
@@ -122,4 +123,9 @@ body {
     h2 {
         font-size: 1em;
     }
+}
+@media (max-width: 768px){
+ .block3{
+     height: 30vh;
+ }
 }
