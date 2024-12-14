@@ -99,4 +99,34 @@ body {
   color: #ffffff;
 }
 
+/* Мобільна версія */
+@media (max-width: 768px) {
+  .block2 {
+    font-size: 0.9em;
+  }
+
+  .block2 ul li a {
+    margin-top: 5vh;
+
+  }
+
+  h1 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 768px){
+  .block3{
+    height: 30vh;
+  }
+}
+
+
 
