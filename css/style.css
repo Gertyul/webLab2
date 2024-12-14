@@ -58,7 +58,7 @@ body {
 .block3 {
   grid-area: main;
   background-color: #e5ddd5;
-  text-align: center;
+  text-align: right;
   color: #2f2e2d;
   padding: 20px;
 }
