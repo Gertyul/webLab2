@@ -57,17 +57,21 @@ async function deleteToast(index) {
 
             if (response.ok) {
                 console.log("Toast успішно видалено");
+                showToast("Запис успішно видалено!"); // Показуємо тост
                 loadToasts(); // Перезавантажуємо список Toasts
             } else {
                 console.error("Помилка видалення:", response.statusText);
+                showToast("Помилка видалення запису!");
             }
         } catch (error) {
             console.error("Помилка під час запиту:", error);
+            showToast("Помилка підключення до сервера!");
         }
     } else {
         console.error("Некоректний індекс для видалення:", index);
     }
 }
+
 
 async function fetchExistingToasts() {
     try {
@@ -84,6 +88,25 @@ async function fetchExistingToasts() {
         console.error("Помилка:", error);
         return [];
     }
+}
+function showToast(message) {
+    const toast = document.createElement("div");
+    toast.innerText = message;
+    toast.style.position = "fixed";
+    toast.style.bottom = "20px";
+    toast.style.right = "20px";
+    toast.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    toast.style.color = "white";
+    toast.style.padding = "10px 20px";
+    toast.style.borderRadius = "5px";
+    toast.style.zIndex = "1000";
+    toast.style.fontSize = "16px";
+    document.body.appendChild(toast);
+
+    // Видаляємо тост через 3 секунди
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
 }
 
 
