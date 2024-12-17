@@ -7,14 +7,15 @@ window.onload = function () {
     if (cookies) {
         const savedData = decodeURIComponent(cookies.split('=')[1]);
         if (confirm(`Збережений текст: "${savedData}"
-Кількість слів у тексті: ${savedData.split(/\s+/).length}
-Після натискання кнопки «ОК» відбудеться видалення даних із cookies.`)) {
+            Кількість слів у тексті: ${savedData.split(/\s+/).length}
+            Після натискання кнопки «ОК» відбудеться видалення даних із cookies.`)) {
             document.cookie = 'textData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-            alert('Дані з cookies видалено. Натискніть OK, щоб перезавантажити сторінку.');
+            alert('Дані з cookies видалено. Натисніть OK, щоб перезавантажити сторінку.');
             location.reload();
             return;
         }
-    } else {
+    }
+    else {
         // 1. Заміна контенту блоків 3 та 5
         const block3 = document.querySelector('.block3');
         const block5 = document.querySelector('.block5');
@@ -116,7 +117,6 @@ window.onload = function () {
             // Збереження даних у cookies
             document.cookie = `textData=${encodeURIComponent(text)}; path=/;`;
         });
-
 
     }
     // 4. Зміна кольору фону блоку "2" та збереження в localStorage
