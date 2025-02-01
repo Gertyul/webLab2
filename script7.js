@@ -168,8 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-
-
     function sendAccumulatedEvents() {
         const events = JSON.parse(localStorage.getItem('events')) || [];
         if (events.length === 0) return;
