@@ -1,5 +1,8 @@
 const databaseUrl = "https://weblab6-2f3f4-default-rtdb.firebaseio.com/firebase.json";
 
+// Завантаження Toasts при завантаженні сторінки
+document.addEventListener("DOMContentLoaded", loadToasts);
+
 // Функція для отримання Toasts з Firebase
 async function loadToasts() {
     try {
@@ -110,5 +113,3 @@ function showToast(message) {
 }
 
 
-// Завантаження Toasts при завантаженні сторінки
-document.addEventListener("DOMContentLoaded", loadToasts);
